@@ -44,6 +44,15 @@ def inverted_triangle(n):
             print(j, end=" ")
         print()
 
+#=======================================Pattern 5===========================================
+def full_pyramid(n):
+    #Star
+    for i in range(1, n+1):
+        for j in range(1, n-i+1):
+            print(" ", end="")
+        for k in range(1, 2*i):
+            print("*", end="")
+        print()
 
 #=======================================Main Program=========================================
 n = int(input("Enter a number: "))
@@ -59,3 +68,6 @@ repeated_number(n)
 
 print("\nPattern 4: Inverted Triangle")
 inverted_triangle(n)
+
+print("\nPattern 5: Full Pyramid")
+full_pyramid(n)
