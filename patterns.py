@@ -54,6 +54,32 @@ def full_pyramid(n):
             print("*", end="")
         print()
 
+#=======================================Pattern 6===========================================
+def reversed_pyramid(n):
+    #Star
+    for i in range(n, 0, -1):
+        for j in range(1, n-i+1):
+            print(" ", end="")
+        for k in range(1, 2*i):
+            print("*", end="")
+        print()
+
+#=======================================Pattern 7===========================================
+def diamond(n):
+    #Star
+    for i in range(1, n+1):
+        for j in range(1, n-i+1):
+            print(" ", end="")
+        for k in range(1, 2*i):
+            print("*", end="")
+        print()
+    for i in range(n, 0, -1):
+        for j in range(1, n-i+1):
+            print(" ", end="")
+        for k in range(1, 2*i):
+            print("*", end="")
+        print()
+
 #=======================================Main Program=========================================
 n = int(input("Enter a number: "))
 
@@ -71,3 +97,9 @@ inverted_triangle(n)
 
 print("\nPattern 5: Full Pyramid")
 full_pyramid(n)
+
+print("\nPattern 6: Reversed Pyramid")
+reversed_pyramid(n)
+
+print("\nPattern 7: Diamond")
+diamond(n)
