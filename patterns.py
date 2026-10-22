@@ -79,6 +79,16 @@ def diamond(n):
         for k in range(1, 2*i):
             print("*", end="")
         print()
+#=======================================Pattern 8===========================================
+def pattern8(n):
+        for i in range(1, n+1):
+            for j in range(1,i+1):
+                print("*", end="")
+            print()
+        for i in range(n-1, 0, -1):
+            for j in range(1,i+1):
+                print("*", end="")
+            print()
 
 #=======================================Main Program=========================================
 n = int(input("Enter a number: "))
@@ -103,3 +113,6 @@ reversed_pyramid(n)
 
 print("\nPattern 7: Diamond")
 diamond(n)
+
+print("\nPattern 8:")
+pattern8(n)
