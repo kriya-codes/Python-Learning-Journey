@@ -90,6 +90,16 @@ def pattern8(n):
                 print("*", end="")
             print()
 
+#=======================================Pattern 9===========================================
+def pattern9(n):
+    for i in range(1,n+1):
+        for j in range(1, i+1):
+            if (i%2 == 0 and j%2 == 0) or (i%2 != 0 and j%2 != 0): #short formula(i%2 == j%2)
+                print("1", end="")
+            else:
+                print("0", end="")
+        print()
+
 #=======================================Main Program=========================================
 n = int(input("Enter a number: "))
 
@@ -116,3 +126,6 @@ diamond(n)
 
 print("\nPattern 8:")
 pattern8(n)
+
+print("\nPattern 9:")
+pattern9(n)
