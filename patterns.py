@@ -6,7 +6,6 @@ def square_star(n):
             print("*", end=" ")
         print()
 
-
 #=======================================Pattern 2===========================================
 def right_angle(n):
     # Star
@@ -21,14 +20,12 @@ def right_angle(n):
             print(j, end=" ")
         print()
 
-
 #=======================================Pattern 3===========================================
 def repeated_number(n):
     for i in range(1, n+1):
         for j in range(1, i+1):
             print(i, end=" ")
         print()
-
 
 #=======================================Pattern 4===========================================
 def inverted_triangle(n):
@@ -79,6 +76,7 @@ def diamond(n):
         for k in range(1, 2*i):
             print("*", end="")
         print()
+
 #=======================================Pattern 8===========================================
 def pattern8(n):
         for i in range(1, n+1):
@@ -109,6 +107,18 @@ def hollow_square(n):
             else:
                 print(" ", end=" ")
         print()
+
+#=======================================Pattern 11===========================================
+def pattern11(n):
+    for i in range(1, n+1):
+        for j in range(1,i+1):
+            print(j, end="")
+        for k in range(0, 2*(n-i)):
+            print(" ", end="")
+        for l in range(i,0,-1):
+            print(l, end="")
+        print()
+
 #=======================================Main Program=========================================
 n = int(input("Enter a number: "))
 
@@ -141,3 +151,6 @@ pattern9(n)
 
 print("\nPattern 10: Hollow Square:")
 hollow_square(n)
+
+print("\nPattern 11:")
+pattern11(n)
