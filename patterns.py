@@ -119,6 +119,14 @@ def pattern11(n):
             print(l, end="")
         print()
 
+#=======================================Pattern 12===========================================
+def pattern12(n):
+    num=1
+    for i in range(1, n+1):
+        for j in range(1,i+1):
+            print(num, end=" ")
+            num+=1
+        print()
 #=======================================Main Program=========================================
 n = int(input("Enter a number: "))
 
@@ -154,3 +162,6 @@ hollow_square(n)
 
 print("\nPattern 11:")
 pattern11(n)
+
+print("\nPattern 12:")
+pattern12(n)
