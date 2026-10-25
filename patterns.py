@@ -127,6 +127,16 @@ def pattern12(n):
             print(num, end=" ")
             num+=1
         print()
+
+#=======================================Pattern 13===========================================
+def alphabet(n):
+    #Alphabet pattrens
+    ch=65
+    for i in range(1, n+1):
+        for j in range(0,i):
+            print(chr(ch+j), end=" ")
+        print()
+
 #=======================================Main Program=========================================
 n = int(input("Enter a number: "))
 
@@ -165,3 +175,6 @@ pattern11(n)
 
 print("\nPattern 12:")
 pattern12(n)
+
+print("\nPattern 13: Alphabet Pattern")
+alphabet(n)
