@@ -137,6 +137,15 @@ def alphabet(n):
             print(chr(ch+j), end=" ")
         print()
 
+#=======================================Pattern 14===========================================
+def reverse_alphabet(n):
+    #Alphabet pattrens
+    ch=65
+    for i in range(n,0,-1):
+        for j in range(0,i):
+            print(chr(ch+j), end=" ")
+        print()
+
 #=======================================Main Program=========================================
 n = int(input("Enter a number: "))
 
@@ -178,3 +187,6 @@ pattern12(n)
 
 print("\nPattern 13: Alphabet Pattern")
 alphabet(n)
+
+print("\nPattern 14: Reverse Alphabet Pattern")
+reverse_alphabet(n)
