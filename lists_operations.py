@@ -32,4 +32,9 @@ print(numbers[:4]) # starts from the beginning.
 print(numbers[3:]) # continues till end.
 print(numbers[:])  # copies the whole list into a new list.
 
+# Slicing with a step:
+# The syntsx is : list_name[start:stop:step]
 
+print(numbers[::2])  # takes every second element, starting at index 0.
+print(numbers[1::2]) # takes every second element, starting at index 1.
+print(numbers[::-1]) # reverses the list.
