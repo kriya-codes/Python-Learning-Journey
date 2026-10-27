@@ -1,6 +1,6 @@
 # A list stores multiple values in a single variable.
 
-numbers=[10, 20, 30, 40, 50]
+numbers=[10, 20, 30, 40, 50, 60, 70]
 print(numbers)
 
 student=["Alice", 20, 9.2, True]  # can store different datatypes as well.
@@ -15,3 +15,21 @@ print(fruits[1])
 print(fruits[2])
 print(fruits[3])
 print(fruits[4])
+
+# Above we've learned how to access individual elements using indexes. 
+# Now let's learn how to access multiple elements at once.
+# For above two list:
+print(numbers[1:3])
+print(fruits[2:6])
+
+# It is know as slicing. 
+# The syntsx is : list_name[start:stop] 
+# where, start — the index where slicing begins (included). 
+#        stop — the index where slicing ends (excluded).
+
+# More examples:
+print(numbers[:4]) # starts from the beginning.
+print(numbers[3:]) # continues till end.
+print(numbers[:])  # copies the whole list into a new list.
+
+
