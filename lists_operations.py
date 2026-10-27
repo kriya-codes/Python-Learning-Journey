@@ -38,3 +38,15 @@ print(numbers[:])  # copies the whole list into a new list.
 print(numbers[::2])  # takes every second element, starting at index 0.
 print(numbers[1::2]) # takes every second element, starting at index 1.
 print(numbers[::-1]) # reverses the list.
+
+# Adding Elements to a Python List.
+# We'll learn three important methods: append(), insert(), and extend(). They all add elements, but they work differently.
+
+# 1. append() — Add one element at the end
+veggies=["Potato", "Onion", "Tomato"]
+veggies.append("Chillis") # adds its argument as a single element
+print(veggies)
+
+veggies.append(["Chillis, Carrot"])
+print(veggies) # becomes one nested list element, not two separate elements.
+
