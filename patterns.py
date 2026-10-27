@@ -168,6 +168,14 @@ def pattern16(n):
             print(chr(ch+(l-1)), end="")
         print()
 
+#=======================================Pattern 17===========================================
+def pattern17(n):
+    ch=65
+    for i in range(1,n+1):
+        for j in range(i,0,-1):
+            print(chr(ch+(n-j)), end="")
+        print()
+                  
 #=======================================Main Program=========================================
 n = int(input("Enter a number: "))
 
@@ -218,3 +226,6 @@ pattern15(n)
 
 print("\nPattern 16:")
 pattern16(n)
+
+print("\nPattern 17:")
+pattern17(n)
