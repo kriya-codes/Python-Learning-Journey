@@ -50,3 +50,6 @@ print(veggies)
 veggies.append(["Chillis, Carrot"])
 print(veggies) # becomes one nested list element, not two separate elements.
 
+# 2. insert() — Add an element at a specific position
+veggies.insert(1, "Peas") # insert(index, value)
+print(veggies)
