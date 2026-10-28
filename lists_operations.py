@@ -58,3 +58,20 @@ print(veggies)
 vegetable=["Potato", "Onion", "Tomato"]
 vegetable.extend(["Chillis, Carrot"])
 print(vegetable)
+
+# Removing Elements from a List.
+# There are three important ways to remove elements: remove(), pop(), and del.
+
+# 1. remove() — Remove a specific value
+veggies.remove("Chillis")
+print(veggies)
+
+# 2. pop() — Remove using an index
+veggies.pop(4) # without index it removes last element
+print(veggies)
+
+# 3. del — Delete an element or a range (it's a Keyword of Python)
+del veggies[1]
+print(veggies)
+
+
