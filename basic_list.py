@@ -74,12 +74,15 @@ print(veggies)
 del veggies[1]
 print(veggies)
 
+#====================================Some Maths programs on list==============================
 # Find the sum of number_list:
 num=[10, 15, 20, 35, 5]
-sum=0
-for i in num:
-    sum = i + sum
-print("Sum of Number_list:", sum) 
+def Sum(sum):
+    sum=0
+    for i in num:
+        sum = i + sum
+    print("Sum of Number_list:", sum) 
+
 
 
 
